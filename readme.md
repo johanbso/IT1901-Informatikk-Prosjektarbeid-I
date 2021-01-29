@@ -19,29 +19,16 @@ front-end(fxui modulen) fra back-end(core modulen). De to lagene knyttes sammen
 gjennom et rest API(rest modulen). Dette er gjort slik at f.eks. hvis metode for
 lagring i back-end endres til databaselagring i server, så trenger ikke noe
 logikk i front-end å bli endret.
-<br/>
 
-## Mappestruktur
-Prosjektet har en nøstet mappestruktur for å få god oversikt over hvor de ulike 
-kodelementene ligger. I helseapp-mappen er selve prosjektmappen, hvor
-kodeprosjektet ligger for en app som skal registrere ulike helsedata, som f.eks. 
-kan være vekt, skritt, calorier og hvilepuls. 
 
-#Hvordan kjøre appen:
-1. I terminal 1: mvn clean install
-2. I terminal 1: mvn spring-boot:run -f rest/pom.xml
-3. I terminal 2: cd helseapp
-4. I terminal 2: mvn clean install 
-5. I terminal 2: mvn javafx:run -f fxui/pom.xml
-
-#Struktur
-
+## Struktur
 Prosjektet består av 3 moduler, fxui, core og rest. Dette er gjort for å separere
 front-end(fxui modulen) fra back-end(core modulen). De to lagene knyttes sammen 
 gjennom et rest API(rest modulen). Dette er gjort slik at f.eks. hvis metode for
 lagring i back-end endres til databaselagring i server, så trenger ikke noe 
 logikk i front-end å bli endret. 
 
+<br/>
 Appen har følgende mappestruktur:
 
     helseapp 
